@@ -1,0 +1,18 @@
+# ECC-Local-Universal Default Configuration
+# Menggunakan model sama dengan ATLAS/VM kamu
+
+model: llama-3.2-3b-instruct-Qwen2.5-Coder-32B-Instruct.gguf
+provider: llama-cpp
+base_url: http://localhost:11434
+temperature: 0.7
+max_tokens: 4096
+
+# Model mapping
+models:
+  opus: llama-3.2-3b-instruct-Qwen2.5-Coder-32B-Instruct.gguf
+  sonnet: llama-3.2-3b-instruct-Qwen2.5-Coder-32B-Instruct.gguf
+  haiku: llama-3.2-1b-instruct.gguf
+
+# Paths
+model_dir: /home/agent/models
+workdir: /home/agent/ecc-local-universal/workdir
